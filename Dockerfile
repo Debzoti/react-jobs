@@ -1,6 +1,6 @@
 FROM docker.io/oven/bun:latest
 WORKDIR /app
-COPY package.json ./
+COPY . .
 RUN bun install
 COPY . .
 EXPOSE 5173
